@@ -10,56 +10,60 @@ html, body {
 
 }
 
+.navigating {
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index:2;
+}
+
 .logo {
   font-family: 'Montserrat', sans-serif;
-  text-align: left;
+  float: left;
+  display: inline-block;
   font-size: 28px;
   text-decoration-line: none;
   color: #f25f4c;
   margin-left: 25px;
+
 }
 
 nav {
   background-color: #000000;
-  text-align: right;
-  margin-left: 450px;
-  align-content: right;
+  float: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   z-index:2;
 }
 
 nav a {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 18px;
+  color: #ffffff;
+  text-align: right;
+  align-self: right;
+  justify-content: right;
+  align-content: right;
+  text-decoration: none;
+  font-size: 18px;
   padding: 5px;
   margin: 0px 15px;
   font-family: 'Montserrat', sans-serif;
+
 }
 
 nav a:hover {
-	background-color: #f25f4c;
+  background-color: #f25f4c;
   color: #fffffe;
   left: 0;
-  z-index:2;
 }
 
 .headerImg {
   width: 100%;
   opacity: 1;
-}
-
-.navigating {
-	width: 100%;
-	background-color: #000000;
-  padding: 20px;
-  top: 0;
-  left: 0;
-  right: 0;
-	display: flex;
-	flex-wrap: wrap;
-  align-content: center;
-  position: fixed;
-  z-index:2;
 }
 
 .titlestart {
