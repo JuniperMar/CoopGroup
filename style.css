@@ -3,6 +3,11 @@
 html, body {
   height: 100%;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+
 }
 
 .logo {
@@ -59,8 +64,8 @@ nav a:hover {
 
 .titlestart {
   width: 100%;
+  height: 620px;
   background-image: url("./images/header.png");
-  height: 580px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,16 +134,17 @@ h3 {
 .aboutImgContainer {
 	background-color: #000000;
 	display: flex;
-	gap: 26px;
 	flex-wrap: wrap;
   margin: 0px;
-  padding: 20px 20px 40px 20px;
   justify-content: center;
+  font-size: zero;
+  width: 100%;
 }
 
 .aboutImg {
   height: 380px;
   align-items: center;
+  padding: 20px 10px 10px 10px;
 }
 
 .container {
@@ -197,12 +203,13 @@ h3 {
 	width: 300px;
 	background-color: #ffffff;
   padding: 10px;
-  border-radius: 10px;
 }
 
 .box1 img {
 	width: 100%;
   border-radius: 5px;
+  max-height: 360px;
+  object-fit: cover;
 }
 
 .box1Name {
@@ -244,6 +251,35 @@ h3 {
   padding-right: 20px;
 }
 
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+.footerTextWhite {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.footerTextBlack {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0px;
+}
+
 .typer {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
@@ -276,12 +312,13 @@ h3 {
 /* moving cards */
 .container {
   position: relative;
-  width: 1100px;
+  width: 100;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: warp;
-  padding: 75px;
+  padding-top: 80px;
+  padding-bottom: 0px;
   z-index: 1;
 }
 
@@ -290,7 +327,7 @@ h3 {
   max-width: 300px;
   height: 215px;  
   background-color: #ffffff;
-  margin: 20px 10px;
+  margin: 20px 30px;
   padding: 20px 15px;
   
   display: flex;
@@ -309,14 +346,14 @@ h3 {
   height: 260px;
   
   top: -40%;
-  left: 8px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  align-self: center;
   z-index: 1;
 }
 
 .container .card .image img {
   max-width: 100%;
   border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
 .container .card .content {
